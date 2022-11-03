@@ -22,7 +22,7 @@ body {
   justify-items: center;
   padding: 60px; }
 
-.navbar {
+nav {
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
@@ -92,7 +92,7 @@ footer a {
   color: #d5cccc; }
 
 @media (max-width: 768px) {
-  .container-grid {
+  body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .navbar {
