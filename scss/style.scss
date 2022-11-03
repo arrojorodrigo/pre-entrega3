@@ -1,0 +1,138 @@
+nav ul li {
+    a {
+      text-decoration: none;
+      color: white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  
+    list-style-type: none;
+  }
+  
+body{
+  background-color: rgba(15, 5, 5, 0.904);
+  background-image: url(../assets/img/FONDO3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+  .inicio {
+    background-image: url(./assets/img/FONDO3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  .logo {
+    display: grid;
+    justify-items: center;
+    padding: 60px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: rgba(43, 91, 34, 0.704);
+  }
+  
+  .form-contact {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    width: 400px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-60%, 10%);
+  }
+  
+  .contact {
+    padding: .8rem;
+    overflow: hidden;
+  
+    label, input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  
+    label {
+      font-weight: 700;
+    }
+  
+    textarea {
+      min-height: 100px;
+    }
+  }
+  
+  input {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .footer {
+    padding: 1em 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  
+  footer a {
+    text-decoration: underline;
+    color: rgb(27, 27, 138);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .informaticus {
+    display: grid;
+    padding: 8px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(213, 204, 204);
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  
+  .sobre-mi {
+    display: grid;
+    padding: 10px;
+    background-image:url(../assets/img/PERFIL.jpg);
+    background-repeat:space;
+    background-position:bottom;
+    background-size: 100px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(213, 204, 204);
+    font-size: 20px;
+  }
+
+  .artisticus {
+    display: grid;
+    padding: 10px;
+    text-align: center;
+    color: rgb(213, 204, 204);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .container-grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+    }
+  
+    .navbar {
+      justify-content: flex-end;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 1fr);
+    }
+  
+    .navbar {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
